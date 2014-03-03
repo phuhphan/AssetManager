@@ -1,0 +1,6 @@
+TABBAR_ASSET                                 "Assets"
+TABBAR_TAKEPHOTO                            "Take Photos"
+TABBAR_SETTINGS                              "Settings"
+SETTINGS_MENU_LANGUAGE                     "Language"
+SETTINGS_MENU_LANGUAGE_US                      "American"
+SETTINGS_MENU_LANGUAGE_VI                      "VietNamese"

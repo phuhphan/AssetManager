@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="13A476u" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="DBAsset" representedClassName="DBAsset" syncable="YES">
+        <attribute name="alway" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="date_create" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="detail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="imagename" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="position" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DBPosition" inverseName="asset" inverseEntity="DBPosition" syncable="YES"/>
+    </entity>
+    <entity name="DBPosition" representedClassName="DBPosition" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="pointx" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="pointy" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="asset" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DBAsset" inverseName="position" inverseEntity="DBAsset" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DBAsset" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="DBPosition" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>

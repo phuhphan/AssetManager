@@ -1,0 +1,6 @@
+TABBAR_ASSET                                "Tài sản"
+TABBAR_TAKEPHOTO                           "Chụp ảnh"
+TABBAR_SETTINGS                             "Cài đặt"
+SETTINGS_MENU_LANGUAGE                    "Ngôn ngữ"
+SETTINGS_MENU_LANGUAGE_US                     "Tiếng Anh"
+SETTINGS_MENU_LANGUAGE_VI                     "Tiếng Việt"
